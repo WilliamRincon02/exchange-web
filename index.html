@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchange Web</title>
+    <link rel="stylesheet" href="./styles/stayle.css">
 </head>
 <body>
+    <div class="bg-blur"></div>
+    <section>
+        <form action="./index.html">
+            <div class="form-group">
+                <div class="base-amount-group">
+                    <label for="base-amount">Cantidad</label>
+                    <input type="number" name="Cantidad" id="base-amount" placeholder="0.00" required>
+                    <select name="Cantidad" id="base-code">
+                    </select>
+                </div>
+                
+                <div class="target-amount-group">
+                    <label for="target-code">Convertido a</label>
+                    <select name="Convertido a" id="target-code">
+                    </select>
+                </div>
+                <input type="button" value="Enviar" id="convert-button">
+            </div>
+        </form>
+        
+        <div class="result" id="result">
+            <h2>Resultado</h2>
+            <p id="result-text"></p>
+        </div>
+    </section>
     
 </body>
+<script src="./scripts/main.js"></script>
 </html>
